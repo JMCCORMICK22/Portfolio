@@ -1,0 +1,274 @@
+/* basic styling to make the links bigger */
+#navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* make the navbar alway stay on top */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  margin-top: 560px;
+}
+
+#navigation a {
+  color: #000;
+}
+
+#navigation span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 50px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigation span a {
+  display: inline-block;
+}
+
+/* when a link is clicked, it gets highlighted */
+.highlighted {
+  color: red;
+}
+
+/* make each section taller and give them different colors */
+#content {
+  margin-top: 50px;
+}
+
+#content div {
+  height: 100vh;
+  /* align the text in the middle */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.avatar {
+  margin: 20px;
+}
+
+.meetus {
+  text-align: center;
+}
+
+.mission {
+  color: white;
+}
+
+#meet {
+  font-size: 70px;
+}
+
+.contactusform {
+  margin: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.messappear {
+  display: none;
+}
+
+#contactcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.otherform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+#nameinput:hover, #emailinput:hover, #messageinput:hover {
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+}
+
+#contact {
+  margin: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.header {
+  color: lightblue;
+  font-family: 'Kulim Park', sans-serif;
+  text-align: right;
+  padding: 12px;
+  background: url("./images/sunshine.jpg") center no-repeat;
+}
+
+img {
+  float: right;
+  vertical-align: top;
+}
+
+.offering {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0px 150px 0px;
+}
+
+body {
+  background: #e83a25;
+  background: -webkit-gradient(linear, right bottom, left top, from(#e83a25), to(#eeca0f));
+  background: linear-gradient(to top left, #e83a25, #eeca0f);
+}
+
+.help {
+  padding: 150px;
+}
+
+.counselVideo {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.videoFrame {
+  width: 100%;
+}
+
+.videoFrame iframe {
+  margin: 0 auto;
+  display: block;
+  width: 560px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+hr {
+  padding-bottom: 30px;
+}
+
+#header {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: 300px;
+  text-align: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.woah {
+  margin-bottom: 250px;
+}
+
+footer {
+  background-color: rgba(255, 255, 128, 0.8);
+}
+
+#icon {
+  font-size: 100px;
+  height: 100px;
+}
+
+.formdownload {
+  margin: 50px;
+}
+
+.titleform {
+  margin: 60px;
+  text-align: center;
+  font-size: 75px;
+}
+/*# sourceMappingURL=style.css.map */

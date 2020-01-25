@@ -1,0 +1,33 @@
+.contactusform {
+margin: 75px;
+display: flex;
+justify-content: space-evenly;
+}
+
+.messappear {
+    display: none;
+}
+
+#contactcontent {
+    display: flex;
+    justify-content: center;
+}
+
+.otherform {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+}
+
+#nameinput:hover, #emailinput:hover, #messageinput:hover {
+    border: 1px rgba($color: #000000, $alpha: .5) solid;
+}
+
+#contact {
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+}
